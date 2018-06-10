@@ -1,0 +1,44 @@
+{
+  "name": "appbook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=app,app:* nodemon app.js",
+    "lint": "eslint app.js"
+  },
+  "author": "Luis M. B.",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bootstrap": "^3.2.0",
+    "chalk": "^2.4.1",
+    "cookie-parser": "^1.4.3",
+    "debug": "^3.1.0",
+    "ejs": "^2.6.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "mongodb": "^3.0.10",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.5",
+    "passport": "^0.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-import": "^2.12.0"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
